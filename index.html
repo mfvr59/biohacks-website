@@ -10,6 +10,26 @@
 			body {
 				font-family: 'Lato', sans-serif; /* Sets Lato as the default font for the website */
 			}
+			#header {
+				background-image: url('images/muscle4.png');
+				background-position: center;
+				background-size: cover;
+				height: 1350px;
+			}
+			#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity to make it darker or lighter */
+    z-index: 1;
+}
+.inner {
+    position: relative;
+    z-index: 2; 
+}
 			#one #typing {
             white-space: nowrap;
             overflow: hidden;
@@ -19,7 +39,20 @@
         @keyframes blink-caret {
             from, to { border-color: transparent }
             50% { border-color: black }
-        }		
+        }
+		#header h1 {
+            font-size: 45px; 
+            color: #ffffff;
+        }
+        #header h2 {
+            font-size: 35px; 
+            color: #ffffff;
+        }
+        #header h3 {
+            font-size: 30px;
+            font-style: italic;
+            color: #ffffff;
+        }	
 		</style>
 
 	</head>
@@ -29,9 +62,9 @@
 		<header id="header">
 			<div class="inner">
 				<a href="#" class="image avatar"><img src="" alt="" /></a>
-				<h1 class="large-header">Stanford BioHacks 2024</h1>
+				<h1><strong><b>Stanford BioHacks 2024</b></strong></h1>
 				<h2>09.22 - 09.23</h2>
-				<h3>A human centered hackathon.</h3> <!-- Typing animation will appear here -->
+				<h3><i>A human centered hackathon.</i></h3>
 			</div>
 		</header>
 
@@ -40,7 +73,7 @@
 				<header class="major">
 					<h2 id="typing"></h2>
 				</header>
-				<p>Stanford BioHacks is a 24-hour long event where students from around the globe work together to design and build innovative technology projects in a specific research area. For this first edition, we will be focusing on "Innovations for Muscular Dystrophy". Participants will have the opportunity to build, learn, and create technology projects from scratch while receiving mentorship from MD patients and professionals.</p>
+				<p>Stanford BioHacks is a 24-hour long event where students from <b>around the globe</b> work together to design and build innovative technology projects in a specific research area. For this first edition, we will be focusing on <b><i>"Innovations for Muscular Dystrophy"</i></b>. Participants will have the opportunity to build, learn, and create technology projects from scratch while receiving mentorship from <b>MD patients and professionals</b>.</p>
 				
 				<a class="image fit thumb"><img src="images/igemteam.jpeg" alt="" /></a>
 				<ul class="actions">
@@ -107,24 +140,24 @@
 				
 						<!-- Speaker Slides -->
 						<div class="slides">
-							<img src="images/speaker1.jpg" alt="Dr. Jane Doe" style="width:100%">
+							<img src="images/random.jpg" alt="Dr. Jane Doe" style="width:100%">
 							<div class="text">
-								<h3>Dr. Jane Doe</h3>
-								<p>Dr. Doe is a leading researcher in genetic therapies for muscular dystrophy, with over 20 years of experience in medical genetics.</p>
+								<h3>Speaker 1</h3>
+								<p>bio + description.</p>
 							</div>
 						</div>
 						<div class="slides">
-							<img src="images/speaker2.jpg" alt="Professor John Smith" style="width:100%">
+							<img src="images/random.jpg" alt="Professor John Smith" style="width:100%">
 							<div class="text">
-								<h3>Professor John Smith</h3>
-								<p>Professor Smith specializes in biomechanical engineering to aid those with muscular dystrophy, focusing on assistive technologies.</p>
+								<h3>Speaker 2</h3>
+								<p>bio+description.</p>
 							</div>
 						</div>
 						<div class="slides">
-							<img src="images/speaker3.jpg" alt="Dr. Emily White" style="width:100%">
+							<img src="images/random.jpg" alt="Dr. Emily White" style="width:100%">
 							<div class="text">
-								<h3>Dr. Emily White</h3>
-								<p>Dr. White is a renowned public health expert who applies her skills to improve healthcare delivery systems for chronic diseases like muscular dystrophy.</p>
+								<h3>SPeaker 3</h3>
+								<p>bio+description.</p>
 							</div>
 						</div>
 				
@@ -198,7 +231,6 @@
 				
 				
 				<!-- Advisory Board Section -->
-				 <!-- Advisory Board Section -->
 <section id="advisoryBoard">
     <header class="major">
         <h2>Advisory Board</h2>
@@ -207,43 +239,34 @@
     
     <!-- Advisory Board Grid -->
     <div class="grid">
-        <!-- Board Member 1 -->
+        
         <div class="board-member">
-            <img src="images/person1.jpeg" alt="Dr. Alice Johnson">
+            <img src="images/random.jpg" alt="Dr. Alice Johnson">
             <div class="overlay">
-                <h3>Dr. Alice Johnson</h3>
+                <h3>Person 1</h3>
                 <p>Expert in Genetic Research and Policy Making</p>
             </div>
         </div>
-        <!-- Board Member 2 -->
+        
         <div class="board-member">
-            <img src="images/person1.jpeg" alt="Dr. Bob Smith">
+            <img src="images/random.jpg" alt="Dr. Bob Smith">
             <div class="overlay">
-                <h3>Dr. Bob Smith</h3>
+                <h3>Person 2</h3>
                 <p>Pioneer in Neurodegenerative Disease Research</p>
             </div>
         </div>
-        <!-- Board Member 3 -->
+        
         <div class="board-member">
-            <img src="images/person1.jpeg" alt="Professor Cindy Lee">
+            <img src="images/random.jpg" alt="Professor Cindy Lee">
             <div class="overlay">
-                <h3>Professor Cindy Lee</h3>
+                <h3>Person 3</h3>
                 <p>Biomedical Engineering Innovator</p>
             </div>
         </div>
-        <!-- Board Member 4 -->
-        <div class="board-member">
-            <img src="images/person1.jpeg" alt="Dr. David Park">
-            <div class="overlay">
-                <h3>Dr. David Park</h3>
-                <p>Leader in Muscular Dystrophy Clinical Trials</p>
-            </div>
-        </div>
-        <!-- Repeat as needed for additional board members -->
+
     </div>
 </section>
 
-<!-- CSS for Advisory Board Section -->
 <style>
     .grid {
         display: grid;
@@ -337,13 +360,34 @@
 							<p>A hackathon is an event, typically lasting several days, during which a large number of people meet to engage in collaborative computer programming.</p>
 						</details>
 						<details>
-							<summary>How do I participate?</summary>
-							<p>You can participate by registering on DevPost, forming a team, and submitting a project by the deadline.</p>
+							<summary>Who can register?</summary>
+							<p>If you are a college undergraduate, then yes! Note that we consider student status during the fall of 2024, so students who graduated prior to the event are not eligible.</p>
 						</details>
 						<details>
 							<summary>How do I participate?</summary>
-							<p>You can participate by registering on DevPost, forming a team, and submitting a project by the deadline.</p>
+							<p>You can participate by registering on DevPost - you do not need a team! Register <a href="https://stanford-biohacks.devpost.com/">here</a>!</p>
 						</details>
+						<details>
+							<summary>But I don't have a team!</summary>
+							<p>You don't need to! Even though you can register with a team of up to 4 people, we'll have team formation events at the beginning of the hackathon geared towards helping you find people to work with. You can also meet new people through our admitted hacker Slack server leading up to our event.</p>
+						</details>
+						<details>
+							<summary>Where is will the hackathon happen?</summary>
+							<p>Stanford BioHacks is 100% virtual! In your onboarding, we will send the Zoom details and anything else you need to access the meeting.</p>
+						</details>
+						<details>
+							<summary>What is the cost?</summary>
+							<p>Stanford BioHacks is 100% free of cost.</p>
+						</details>
+						<details>
+							<summary>What are the hackathon tracks?</summary>
+							<p>We've developed four tracks, or impact areas, for you to hack in. The top project between the 4 tracks will be awarded a prize! You will be able to submit your project to at most ONE track to be eligible for a prize.</p>
+						</details>
+						<details>
+							<summary>I still have questions!</summary>
+							<p>Please email us at stanfordigemteam@gmail.com if there are any further questions or concerns :)</p>
+						</details>
+						
 					</div>
 				</section>
 
