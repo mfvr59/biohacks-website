@@ -1,1 +1,1 @@
-## Stanford BioHacks 2024 Website ##
+stanford biohacks 2024 website
